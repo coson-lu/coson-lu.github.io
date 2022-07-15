@@ -1,11 +1,15 @@
 import {Outlet, Link} from "react-router-dom";
 import React  from 'react';
+import "./nav.css";
+import "./general.css";
+
 function App() {
   return (
     <>
+      <h1 class="header">Coson Lu</h1>
       <nav>
-        <Link to="/">About!!</Link>
-        <Link to="/blog">Blog!!</Link>
+        <Link to="/" class="nav-item">About</Link>
+        <Link to="/blog" class="nav-item">Blog</Link>
       </nav>
       <Outlet />
     </>
