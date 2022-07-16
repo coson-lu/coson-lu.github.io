@@ -12,7 +12,7 @@ function App() {
     <>
       <h1 class="header">Coson Lu</h1>
       <nav>
-        <Link to="/" class="nav-item">About</Link>
+        <Link to="/" class="nav-item">About Me</Link>
         <Link to="/blog" class="nav-item">Blog</Link>
       </nav>
       <Outlet />

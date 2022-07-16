@@ -13,6 +13,7 @@ function About() {
 
     useEffect(() => {
         const intItems = gsap.utils.toArray('.ab-sect-cont')
+        const int = gsap.utils.toArray('.interest')
         intItems.forEach(box => {
             gsap.from(box, {
                 scrollTrigger: {
@@ -26,7 +27,7 @@ function About() {
                 ease: "power4.out"
             })
         });
-        const int = gsap.utils.toArray('.interest')
+        
         int.forEach(boxi => {
             gsap.from(boxi, {
                 scrollTrigger: {
@@ -47,7 +48,7 @@ function About() {
             <div class="content">
                 <div class="abt-card-cont">
                     <Card
-                    interest="1"
+                    interest="Coding"
                     interestContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eu ultrices vitae auctor. Erat imperdiet sed euismod nisi porta lorem. Bibendum arcu vitae elementum curabitur. Id cursus metus aliquam eleifend mi. Proin sagittis nisl rhoncus mattis rhoncus urna. Amet facilisis magna etiam tempor orci. Luctus accumsan tortor posuere ac ut consequat semper. Auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames. Ornare lectus sit amet est placerat. Tortor aliquam nulla facilisi cras fermentum odio eu. Aenean sed adipiscing diam donec. Elementum sagittis vitae et leo duis ut."
                     gray="True"
                     />
