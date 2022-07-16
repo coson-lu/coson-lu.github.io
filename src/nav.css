@@ -6,6 +6,11 @@ nav {
     position: sticky;
     z-index: 100;
     top: -1px;
+    transition: 350ms;
+}
+
+nav:hover {
+    background-color: rgba(15, 15, 15, 0.8);
 }
 
 .nav-item {

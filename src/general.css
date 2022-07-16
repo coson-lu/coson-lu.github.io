@@ -5,13 +5,11 @@ body {
     overflow-x: hidden;
     background-position-x: center;
     background-size: 100%;
-    background-position-y: -190px;
     font-family: Quicksand;
   }
   
 
 p, h1, h2, h3 {
-    margin-left: 10px;
     color: white
 }
 
