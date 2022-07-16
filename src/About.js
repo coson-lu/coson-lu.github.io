@@ -22,7 +22,7 @@ function About() {
                 },
                 x: 60,
                 opacity: 0,
-                duration: 0.5,
+                duration: 0.4,
                 ease: "power4.out"
             })
         });
