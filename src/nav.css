@@ -28,7 +28,18 @@ nav:hover {
 }
 
 .header {
-    font-size: 70px;
+    font-size: 100px;
     font-family: Trebuchet MS;
     text-align: center;
+    color: rgb(20,20,20);
+    margin-bottom: 10px;
+}
+
+#quote {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(20,20,20);
+    padding-bottom: 20px;
+    font-size: 23px;
 }

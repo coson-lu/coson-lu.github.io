@@ -6,26 +6,80 @@
 }
 
 .ab-sect-card {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
     align-items: center;
+    justify-content: center;
 }
 
 .gray {
     background-color: rgb(120, 120, 120);
 }
 
+.pic-item  {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    overflow: hidden;
+    width: 400px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    border-radius: 5%;
+}
+
+.ab-sect-card .ab-sect-cont {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.ab-sect-card .interest {
+    grid-column: 1;
+    grid-row: 1;
+}
+
 .interest {
     font-size: 66px;
     width: 500px;
     text-align: center;
-}
-
-.interest, .ab-sect-cont {
-    padding: 40px 0;
-    
+    padding: 16px 2px;
 }
 
 .ab-sect-cont {
-    width: 890px;
+    width: 300px;
+    padding: 20px;
+}
+
+.pic-item img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.pic-item img:hover {
+    transform: scale(1.2);
+}
+
+.pic-item:hover {
+    border-radius: 15%;
+}
+
+.pic {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item {
+    text-align: center;
+    margin: auto;
+}
+
+.ab-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    line-height: 200px;
+    font-size: 65px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    overflow: hidden;
 }

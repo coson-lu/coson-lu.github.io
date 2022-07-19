@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0%;
     background: url("https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg?w=1024");
@@ -6,7 +10,7 @@ body {
     background-position-x: center;
     background-size: 100%;
     font-family: Quicksand;
-  }
+}
   
 
 p, h1, h2, h3 {
@@ -14,7 +18,7 @@ p, h1, h2, h3 {
 }
 
 p {
-    font-family: Quicksand;
+    font-family: Quicksand, sans-serif, Arial, Helvetica;
     font-size: 20px;
 }
 
