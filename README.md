@@ -1,8 +1,12 @@
+# Intro:
+
+Read all about Coson on this website!
+
 # Pages:
 
 ### About Me Page
 
-On this page, you can read all about me: my top tens, hobbies, interest, etc. They're all on there! Keep on scrolling, and the page will build itself.
+On this page, you can read all about Coson: my top tens, hobbies, interest, etc. They're all on there! Keep on scrolling, and the page will build itself.
 
 ### Blog Page
 
