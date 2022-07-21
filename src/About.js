@@ -55,7 +55,7 @@ function About() {
                     />
                     <Card
                     interest="Piano"
-                    interestContent="I started playing piano when I was five. Piano has always been my favorite instrument, and I love being able to play it. So far, I've played many famous songs, including Moonlight Sonata, River Flows in You, and Chopin's Waltz (op. 64 no. 2). At first, playing and practicing piano was a pain, but now it's fun. I am learning Chopin's Minute Waltz, which, because of the similarities with his other Waltz', is not to difficult."
+                    interestContent="I started playing piano when I was five. Piano has always been my favorite instrument, and I love being able to play it. So far, I've played many famous songs, including Moonlight Sonata, River Flows in You, and Chopin's Waltz (op. 64 no. 2). At first, playing and practicing piano was a pain, but now it's fun. I am currently learning Chopin's Minute Waltz, which, because of the similarities with his other Waltz', is not to difficult."
                     gray="False"
                     imgs="piano.jpg"
                     />

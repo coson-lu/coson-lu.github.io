@@ -9,11 +9,9 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid white;
 }
 
-.gray {
-    background-color: rgb(210, 235, 248);
-}
 
 .pic-item {
     grid-column: 2;
@@ -57,15 +55,18 @@
 
 .interest {
     font-size: 66px;
-    width: 500px;
     text-align: center;
     font-family: sans-serif, Helvetica, Arial;
-    padding: 19px 2px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    width: 230px;
+    border-bottom: 3px solid white;
 }
 
 .ab-sect-cont {
     width: 370px;
-    padding: 20px;
+    padding: 24px;
+    padding-bottom: 28px;
 }
 
 .pic-item img {
@@ -96,9 +97,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    line-height: 200px;
     font-size: 65px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 1px Solid White;
+    width: 900px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 .container {
