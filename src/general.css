@@ -4,17 +4,27 @@ html {
 
 body {
     margin: 0%;
+    font-family: Quicksand;
+}
+
+body:after {
+    content: "";
     background: url("https://www.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg?w=1024");
     background-attachment: fixed;
     overflow-x: hidden;
     background-position-x: center;
     background-size: 100%;
-    font-family: Quicksand;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }
-  
 
 p, h1, h2, h3 {
-    color: white
+    color: black;
 }
 
 p {
@@ -23,7 +33,7 @@ p {
 }
 
 .content {
-    background-color: #4d4d4d;
+    background-color: #f7f7f7;
     margin-bottom: 0px;
     padding: 15px;
 }

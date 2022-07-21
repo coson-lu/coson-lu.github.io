@@ -25,6 +25,7 @@ nav:hover {
 
 .nav-item:hover {
     color: #ffffff;
+    transform: translateY(6px);
 }
 
 .header {

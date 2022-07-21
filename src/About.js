@@ -1,49 +1,34 @@
 import React  from 'react';
 import "./general.css"
 import "./about.css"
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 
 function About() {
     
-    // gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
     
 
 
-    // useEffect(() => {
-    //     const intItems = gsap.utils.toArray('.ab-sect-cont')
-    //     const int = gsap.utils.toArray('.interest')
-    //     intItems.forEach(box => {
-    //         gsap.from(box, {
-    //             scrollTrigger: {
-    //                 trigger: box,
-    //                 start: "top 95%",
-    //                 toggleActions: "restart none restart pause" 
-    //             },
-    //             x: 60,
-    //             y: 20,
-    //             opacity: 0,
-    //             duration: 0.4,
-    //             ease: "power4.out"
-    //         })
-    //     });
-        
-    //     int.forEach(boxi => {
-    //         gsap.from(boxi, {
-    //             scrollTrigger: {
-    //                 trigger: boxi,
-    //                 start: "top 95%",
-    //                 toggleActions: "restart none restart pause" 
-    //             },
-    //             x: -60,
-    //             y: 20,
-    //             opacity: 0,
-    //             duration: 0.4,
-    //             ease: "power4.out"
-    //         })
-    //     });
-    // });
+    useEffect(() => {
+        const intItems = gsap.utils.toArray('.ab-sect-card');
+        intItems.forEach(box => {
+            let an = gsap.timeline({
+                scrollTrigger: {
+                    trigger: box,
+                    start: "top 90%",
+                    toggleActions: "play none none restart" 
+                }
+            })
+            an.from(box, {
+                stagger: true,
+                opacity: 0,
+                y:30,
+                duration:0.6,
+            })
+        });
+    });
 
     return (
         <>
@@ -52,53 +37,28 @@ function About() {
                 <div class="abt-card-cont">
                     <Card
                     interest="Coding"
-                    interestContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eu ultrices vitae auctor. Erat imperdiet sed euismod nisi porta lorem. Bibendum arcu vitae elementum curabitur. Id cursus metus aliquam eleifend mi. Proin sagittis nisl rhoncus mattis rhoncus urna. Amet facilisis magna etiam tempor orci"
+                    interestContent="I started coding when I was 10, and quickly became obsessed with it. My first programs started out as simple graphics and animations. I then started learning about websites. It took about half a year to learn the basics of html and css. By that time, I was coding everyday. A half year or so later and I found out about Python. Because of it's simplicity, I started liking it more and more as I kept on learning. As time went on, I started finding more resources and learning more languages. To this day, coding is still my favorite hobby."
                     gray="True"
-                    imgs="forest.jpg"
+                    imgs="coding.jpg"
                     />
                     <Card
-                    interest="2"
-                    interestContent="Coding"
+                    interest="Soccer"
+                    interestContent="I have been playing competitive soccer for around 5 years in counting, and love the sport. It's a sport where you'll have to make split second decisions and one where you'll have to work together as a team. I currently play right center back, though I've played many positions, namely, both wing backs, center mid, both wing fowards, and goalie. I currently play for Rocklin FC, though I played for CVSC for a majority of the five years."
                     gray="False"
-                    imgs="forest.jpg"
+                    imgs="soccer1.jpg"
                     />
                     <Card
-                    interest="Coding"
-                    interestContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eu ultrices vitae auctor. Erat imperdiet sed euismod nisi porta lorem. Bibendum arcu vitae elementum curabitur. Id cursus metus aliquam eleifend mi. Proin sagittis nisl rhoncus mattis rhoncus urna. Amet facilisis magna etiam tempor orci. Luctus accumsan tortor posuere ac ut consequat semper. Auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames. Ornare lectus sit amet est placerat. Tortor aliquam nulla facilisi cras fermentum odio eu. Aenean sed adipiscing diam donec. Elementum sagittis vitae et leo duis ut."
+                    interest="Chess"
+                    interestContent="I learned how to play chess in first grade, and at that time, I just played it at school. After my first grade year, I didn't play too much chess; I played it here and there, but not on the regular. However, in my fith grade year, the teacher set up a chess board in the class, where we can play with friends, if we finished our work early. That's when I started to try to get good at chess. At the end of the year, we had a tournament, and I came out victorious. I currently also play online. I specialize in bullet, and have a rating of 1280."
                     gray="True"
-                    imgs="forest.jpg"
+                    imgs="chess.jpg"
                     />
                     <Card
-                    interest="2"
-                    interestContent="Coding"
+                    interest="Piano"
+                    interestContent="I started playing piano when I was five. Piano has always been my favorite instrument, and I love being able to play it. So far, I've played many famous songs, including Moonlight Sonata, River Flows in You, and Chopin's Waltz (op. 64 no. 2). At first, playing and practicing piano was a pain, but now it's fun. I am learning Chopin's Minute Waltz, which, because of the similarities with his other Waltz', is not to difficult."
                     gray="False"
-                    imgs="forest.jpg"
+                    imgs="piano.jpg"
                     />
-                    <Card
-                    interest="Coding"
-                    interestContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eu ultrices vitae auctor. Erat imperdiet sed euismod nisi porta lorem. Bibendum arcu vitae elementum curabitur. Id cursus metus aliquam eleifend mi. Proin sagittis nisl rhoncus mattis rhoncus urna. Amet facilisis magna etiam tempor orci. Luctus accumsan tortor posuere ac ut consequat semper. Auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames. Ornare lectus sit amet est placerat. Tortor aliquam nulla facilisi cras fermentum odio eu. Aenean sed adipiscing diam donec. Elementum sagittis vitae et leo duis ut."
-                    gray="True"
-                    imgs="forest.jpg"
-                    />
-                    <Card
-                    interest="2"
-                    interestContent="Coding"
-                    gray="False"
-                    imgs="forest.jpg"
-                    />
-                    <Card
-                    interest="Coding"
-                    interestContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eu ultrices vitae auctor. Erat imperdiet sed euismod nisi porta lorem. Bibendum arcu vitae elementum curabitur. Id cursus metus aliquam eleifend mi. Proin sagittis nisl rhoncus mattis rhoncus urna. Amet facilisis magna etiam tempor orci. Luctus accumsan tortor posuere ac ut consequat semper. Auctor urna nunc id cursus metus aliquam eleifend. Et netus et malesuada fames. Ornare lectus sit amet est placerat. Tortor aliquam nulla facilisi cras fermentum odio eu. Aenean sed adipiscing diam donec. Elementum sagittis vitae et leo duis ut."
-                    gray="True"
-                    imgs="forest.jpg"
-                    />
-                    <Card
-                    interest="2"
-                    interestContent="Coding"
-                    gray="False"
-                    imgs="forest.jpg"
-                    />
-                    
                 </div>
                 
             </div>
