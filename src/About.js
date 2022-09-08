@@ -59,6 +59,12 @@ function About() {
                     gray="False"
                     imgs="piano.jpg"
                     />
+                    <Card
+                    interest="Hiking"
+                    interestContent="Hiking could be a way of relaxation: just a stroll in the park; Or it can be exciting: Climbing mountains, weaving through the jungle vines. Whichever one it is, It's always been a fun, memorable experience. I currently live in Rocklin, where there are many amazing hiking places nearby. Every hike is different, even if the trail is the same, which brings a different experience each time. That's what I love about hiking: it's unexpected and brings adventure."
+                    gray="True"
+                    imgs="hiking.jpg"
+                    />
                 </div>
                 
             </div>
@@ -72,10 +78,10 @@ function Card(props) {
             <>
                 <div class="gray ab-sect-card">
                     <p class="interest grid-item">{props.interest}</p>
-                        <div class="pic-item grid-item">
-                            <img class="pic" src={props.imgs} alt=""></img>
-                        </div>
                     <p class="ab-sect-cont grid-item">{props.interestContent}</p>
+                    <div class="pic-item grid-item">
+                        <img class="pic" src={props.imgs} alt=""></img>
+                    </div>
                 </div>
             </>
         )
@@ -84,10 +90,10 @@ function Card(props) {
             <>
                 <div class="ab-sect-card">
                     <p class="interest grid-item">{props.interest}</p>
-                        <div class="pic-item grid-item">
-                            <img class="pic" src={props.imgs} alt=""></img>
-                        </div>
                     <p class="ab-sect-cont grid-item">{props.interestContent}</p>
+                    <div class="pic-item grid-item">
+                        <img class="pic" src={props.imgs} alt=""></img>
+                    </div>
                 </div>
             </>
         )

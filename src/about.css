@@ -21,6 +21,7 @@
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
     border-radius: 5%;
+    text-align: center;
 }
 
 .ab-sect-card .ab-sect-cont {
@@ -36,11 +37,6 @@
 .gray .pic-item {
     grid-column: 1;
     grid-row: 1 / span 2;
-    overflow: hidden;
-    width: 400px;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
-    border-radius: 5%;
 }
 
 .gray .ab-sect-cont {
@@ -85,6 +81,15 @@
 .pic {
     height: 100%;
     width: 100%;
+    display: block;
+}
+
+.pic-des {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid blue;
 }
 
 .grid-item {
